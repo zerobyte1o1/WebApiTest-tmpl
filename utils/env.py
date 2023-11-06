@@ -9,8 +9,8 @@ class Env:
     env = yaml.safe_load(open(configPath))
     url = "env"
 
-    def get_env(self):
-        url_new = self.url.replace("env", self.env["env"][self.env["default"]]["name"])
+    def get_base_url(self):
+        url_new = self.url.replace("env", self.env["env"][self.env["default"]]["url"])
         return url_new
 
     def get_account(self):
