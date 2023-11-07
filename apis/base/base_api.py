@@ -7,9 +7,10 @@ from utils.mock import Mock
 from faker import Faker
 import json as complexjson
 
+
 class BaseApi:
     get_env = Env()
-    url = get_env.get_env()
+    url = get_env.get_base_url()
     account = get_env.get_account()
     password = get_env.get_pwd()
     env_name = get_env.get_env_name()
@@ -17,7 +18,7 @@ class BaseApi:
     faker = Faker(locale='zh_CN')
     mock = Mock()
 
-    def __init__(self,api_root_url):
+    def __init__(self, api_root_url):
         self.api_root_url = api_root_url
         self.session = requests.session()
 
@@ -46,7 +47,7 @@ class BaseApi:
         if method == "GET":
             return self.session.get(url, **kwargs)
         if method == "POST":
-            return requests.post(url, data, json, **kwargs)
+            return self.session.post(url, data, json, **kwargs)
         if method == "PUT":
             if json:
                 # PUT 和 PATCH 中没有提供直接使用json参数的方法，因此需要用data来传入

@@ -1,6 +1,6 @@
 import json
 
-from base_api import BaseApi
+from apis.base.base_api import BaseApi
 from utils.encrypt import encrpt
 
 
