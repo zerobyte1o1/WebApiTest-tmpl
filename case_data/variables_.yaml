@@ -72,4 +72,7 @@ meta_management:
     id:
 
 user:
-  login:
+  login: "sftest"
+  loginType: "CYPHER"
+  passwd:
+  random:
