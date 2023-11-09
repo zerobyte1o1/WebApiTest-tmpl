@@ -1,0 +1,75 @@
+
+meta_template:
+  create_meta_template:
+    app: f58c2e04-0ab6-4bea-b465-acd92d25dbd4
+    contents:
+      - targets:
+          - code: 123
+            description: null
+            example: 12
+            isTarget: true
+            name: 123
+        template: 模板内容
+        url: http://www.baidu.com
+    description: 模板说明
+    event: 触发事件44
+    fields:
+      - code: 123
+        description: null
+        example: 12
+        isTarget: true
+        name: 123
+      - code: 234
+        description: null
+        example: 43
+        isTarget: true
+        name: 234
+    name: 模板名称
+    pushSchedule:
+      type: IMMEDIATELY
+    renderStyles:
+      - config: null
+        kind: TEXT
+        meta_channel_id: inbox
+
+  update_meta_template:
+    contents:
+      - targets:
+          - code: 1232
+            description: nuasasdasd
+            example: 122
+            isTarget: true
+            name: 1232
+        template: 模板内容
+        url: http://www.baidu.com
+    description: 模板说明
+    event: 触发事件
+    fields:
+      - code: 123
+        description: asdasdasd
+        example: 12
+        isTarget: true
+        name: name2
+      - code: 234
+        description: asfafa
+        example: 43
+        isTarget: true
+        name: name1
+    id:
+    name: 模板名称
+    pushSchedule:
+      type: IMMEDIATELY
+    renderStyles:
+      - config: null
+        kind: TEXT
+        meta_channel_id: inbox
+    status: ENABLED
+    tenantId:
+
+meta_management:
+  update_meta_management:
+    description:
+    id:
+
+user:
+  login:
